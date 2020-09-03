@@ -27,7 +27,7 @@ router.get("/generate", async function (req, res) {
     },
   } = req;
   const html = fs
-    .readFileSync(path.join(__dirname, "template.html"))
+    .readFileSync(path.join(__dirname, "public/template.html"))
     .toString();
   const image = await nodeHtmlToImage({
     puppeteerArgs: {
