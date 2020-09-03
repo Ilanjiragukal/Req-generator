@@ -1,0 +1,664 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://animaproject.s3.amazonaws.com/home/favicon.png"
+    />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+
+    <style>
+      html {
+        height: 987px;
+        width: 760px;
+      }
+      .anima-component-wrapper a,
+      .anima-screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .anima-flexbox-container a {
+        line-height: 0;
+      }
+      .anima-full-width-a {
+        width: 100%;
+      }
+
+      .anima-full-height-a {
+        height: 100%;
+      }
+
+      .anima-screen textarea:focus,
+      .anima-screen input:focus {
+        outline: none;
+      }
+
+      .anima-screen *,
+      .anima-component-wrapper * {
+        box-sizing: border-box;
+      }
+
+      .anima-screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .anima-container-center-vertical,
+      .anima-container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .anima-container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .anima-container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .anima-container-center-vertical > *,
+      .anima-container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .anima-component-wrapper,
+      .anima-screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .anima-auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --anima-z-index: -1;
+      }
+
+      .anima-auto-animated .anima-container-center-vertical,
+      .anima-auto-animated .anima-container-center-horizontal {
+        opacity: 1;
+      }
+
+      .anima-overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .anima-animate-appear {
+        opacity: 0;
+        display: block;
+        animation: anima-reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .anima-animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: anima-reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .anima-animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes anima-reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .anima-flexbox-container a {
+        line-height: 0;
+      }
+      .anima-valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .anima-valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      .anima-component-wrapper,
+      .anima-component-wrapper * {
+        pointer-events: none;
+      }
+
+      .anima-component-wrapper a *,
+      .anima-component-wrapper a,
+      .anima-component-wrapper input,
+      .anima-component-wrapper video,
+      .anima-component-wrapper iframe,
+      .anima-listeners-active,
+      .anima-listeners-active * {
+        pointer-events: auto;
+      }
+
+      .anima-hidden,
+      .anima-hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .anima-smart-layers-pointers,
+      .anima-smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .anima-component-wrapper.anima-not-ready,
+      .anima-component-wrapper.anima-not-ready * {
+        visibility: hidden !important;
+      }
+
+      .anima-listeners-active-click,
+      .anima-listeners-active-click * {
+        cursor: pointer;
+      }
+
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Telugu+MN:700");
+      /* ANIMA screen - instagram-post-1 */
+
+      .font-class-1 {
+        font-family: "OpenSans-Bold", Helvetica, Arial, serif;
+      }
+      .instagram-post-1 {
+        background-color: rgba(255, 255, 255, 1);
+        height: 987px;
+        overflow: hidden;
+        position: relative;
+        width: 762px;
+      }
+      .instagram-post-1 .alotted-date-and-time-C61RwL {
+        background-color: rgba(87, 75, 120, 0);
+        color: var(--cyber-grape);
+        font-size: 16px;
+        height: auto;
+        left: 102px;
+        line-height: 16px;
+        position: absolute;
+        text-align: left;
+        top: 690px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .anusha-hospitalnear-gh-C61RwL {
+        background-color: rgba(250, 80, 80, 0);
+        color: var(--rose);
+        font-size: 30px;
+        height: auto;
+        left: 102px;
+        line-height: 30px;
+        position: absolute;
+        text-align: left;
+        top: 438px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .attender-C61RwL {
+        background-color: rgba(87, 75, 120, 0);
+        color: var(--cyber-grape);
+        font-size: 16px;
+        height: auto;
+        left: 102px;
+        line-height: 16px;
+        position: absolute;
+        text-align: left;
+        top: 598px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .baby-needs-urgent-blood-C61RwL {
+        background-color: rgba(250, 80, 80, 0);
+        color: var(--rose);
+        font-size: 20px;
+        height: auto;
+        left: 102px;
+        line-height: 20px;
+        position: absolute;
+        text-align: left;
+        top: 806px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .blood-drop-C61RwL {
+        background-color: rgba(255, 255, 255, 0);
+        height: 834px;
+        left: 73px;
+        position: absolute;
+        top: 1px;
+        width: 617px;
+      }
+      .instagram-post-1 .bloodrequest-C61RwL {
+        background-color: rgba(250, 80, 80, 0);
+        color: var(--rose);
+        font-size: 16px;
+        height: auto;
+        left: 520px;
+        line-height: 16px;
+        position: absolute;
+        text-align: left;
+        top: 66px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .deivathal-C61RwL {
+        background-color: rgba(250, 80, 80, 0);
+        color: var(--rose);
+        font-size: 30px;
+        height: auto;
+        left: 102px;
+        line-height: 30px;
+        position: absolute;
+        text-align: left;
+        top: 348px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .divya-9498448183-C61RwL {
+        background-color: rgba(250, 80, 80, 0);
+        color: var(--rose);
+        font-size: 30px;
+        height: auto;
+        left: 102px;
+        line-height: 30px;
+        position: absolute;
+        text-align: left;
+        top: 620px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .erode-C61RwL {
+        background-color: rgba(0, 0, 0, 0);
+        color: rgba(0, 0, 0, 1);
+        font-size: 30px;
+        height: auto;
+        left: 520px;
+        line-height: 30px;
+        position: absolute;
+        text-align: left;
+        top: 438px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .for-C61RwL {
+        background-color: rgba(87, 75, 120, 0);
+        color: var(--cyber-grape);
+        font-size: 16px;
+        height: auto;
+        left: 102px;
+        line-height: 16px;
+        position: absolute;
+        text-align: left;
+        top: 329px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .need-C61RwL {
+        background-color: rgba(87, 75, 120, 0);
+        color: var(--cyber-grape);
+        font-size: 16px;
+        height: auto;
+        left: 102px;
+        line-height: 16px;
+        position: absolute;
+        text-align: left;
+        top: 180px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .note-C61RwL {
+        background-color: rgba(87, 75, 120, 0);
+        color: var(--cyber-grape);
+        font-size: 16px;
+        height: auto;
+        left: 102px;
+        line-height: 16px;
+        position: absolute;
+        text-align: left;
+        top: 782px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .o-ve-1-unit-C61RwL {
+        background-color: rgba(250, 80, 80, 0);
+        color: var(--rose);
+        display: flex;
+        font-family: "Open Sans", Helvetica, Arial, serif;
+        font-size: 83px;
+        height: auto;
+        left: 102px;
+        letter-spacing: 0px;
+        line-height: 35px;
+        position: absolute;
+        text-align: left;
+        top: 222px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .path-1-KKZOwD {
+        background-color: rgba(234, 100, 83, 0);
+        height: 100%;
+        left: 0px;
+        position: absolute;
+        top: 1px;
+        width: 308px;
+      }
+      .instagram-post-1 .path-2-KKZOwD {
+        background-color: rgba(255, 255, 255, 0);
+        bottom: 73px;
+        height: 234px;
+        left: 73px;
+        position: absolute;
+        width: 237px;
+      }
+      .instagram-post-1 .path-3-KKZOwD {
+        background-color: rgba(239, 31, 75, 0);
+        height: 100%;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 308px;
+      }
+      .instagram-post-1 .place-C61RwL {
+        background-color: rgba(87, 75, 120, 0);
+        color: var(--cyber-grape);
+        font-size: 16px;
+        height: auto;
+        left: 102px;
+        line-height: 16px;
+        position: absolute;
+        text-align: left;
+        top: 417px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .reason-C61RwL {
+        background-color: rgba(87, 75, 120, 0);
+        color: var(--cyber-grape);
+        font-size: 16px;
+        height: auto;
+        left: 102px;
+        line-height: 16px;
+        position: absolute;
+        text-align: left;
+        top: 507px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .rectangle-1-C61RwL {
+        background-color: rgba(253, 210, 165, 1);
+        height: 987px;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 763px;
+      }
+      .instagram-post-1 .span0-QbN387 {
+        color: rgba(250, 80, 80, 1);
+        font-family: "OpenSans-ExtraBold", Helvetica, Arial, serif;
+      }
+      .instagram-post-1 .span1-QbN387 {
+        color: rgba(250, 80, 80, 1);
+        font-family: "OpenSans-ExtraBold", Helvetica, Arial, serif;
+        font-size: 35px;
+      }
+      .instagram-post-1 .surgery-C61RwL {
+        background-color: rgba(250, 80, 80, 0);
+        color: var(--rose);
+        font-size: 30px;
+        height: auto;
+        left: 102px;
+        line-height: 30px;
+        position: absolute;
+        text-align: left;
+        top: 528px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .verified-by-sir-jivi-9715209861-C61RwL {
+        background-color: rgba(250, 80, 80, 0);
+        color: var(--rose);
+        font-family: "OpenSans-Regular", Helvetica, Arial, serif;
+        font-size: 16px;
+        height: auto;
+        left: 416px;
+        letter-spacing: 0px;
+        line-height: 16px;
+        position: absolute;
+        text-align: left;
+        top: 930px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .x12-sep-2020-0930-am-C61RwL {
+        background-color: rgba(0, 0, 0, 0);
+        color: rgba(0, 0, 0, 1);
+        font-size: 30px;
+        height: auto;
+        left: 102px;
+        line-height: 30px;
+        position: absolute;
+        text-align: left;
+        top: 712px;
+        white-space: nowrap;
+        width: auto;
+      }
+      .instagram-post-1 .இளஞசறககள-C61RwL {
+        background-color: rgba(250, 80, 80, 0);
+        color: var(--rose);
+        font-family: "TeluguMN-Bold", Helvetica, Arial, serif;
+        font-size: 24px;
+        height: auto;
+        left: 102px;
+        letter-spacing: 0px;
+        line-height: 24px;
+        position: absolute;
+        text-align: left;
+        top: 62px;
+        white-space: nowrap;
+        width: auto;
+      }
+      :root {
+        --cyber-grape: rgba(87, 75, 120, 1);
+        --rose: rgba(250, 80, 80, 1);
+      }
+    </style>
+
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(255, 255, 255, 1)">
+    <input type="hidden" id="anPageName" name="page" value="instagram-post-1" />
+
+    <div class="anima-container-center-horizontal">
+      <div class="instagram-post-1 anima-screen">
+        <div class="rectangle-1-C61RwL"></div>
+        <img
+          class="blood-drop-C61RwL"
+          src="https://anima-uploads.s3.amazonaws.com/projects/5f4fceb49d37ee283da68a40/releases/5f4fd41002bb278da232ee62/img/blood-drop@1x.png"
+          anima-src="https://anima-uploads.s3.amazonaws.com/projects/5f4fceb49d37ee283da68a40/releases/5f4fd41002bb278da232ee62/img/blood-drop@1x.png"
+        />
+
+        <div class="o-ve-1-unit-C61RwL">
+          <span class="span0-QbN387"> {{group}} </span
+          ><span class="span1-QbN387"> {{units}} Unit </span>
+        </div>
+
+        <div class="surgery-C61RwL font-class-1">{{reason}}</div>
+
+        <div class="reason-C61RwL font-class-1">Reason</div>
+
+        <div class="attender-C61RwL font-class-1">Attender</div>
+
+        <div class="anusha-hospitalnear-gh-C61RwL font-class-1">{{place}}</div>
+
+        <div class="erode-C61RwL font-class-1">{{district}}</div>
+
+        <div class="place-C61RwL font-class-1">Place</div>
+
+        <div class="இளஞசறககள-C61RwL">இளஞ்சிறகுகள்</div>
+
+        <div class="bloodrequest-C61RwL font-class-1">
+          #BLOODREQUEST {{reqId}}
+        </div>
+
+        <div class="deivathal-C61RwL font-class-1">{{name}}</div>
+
+        <div class="for-C61RwL font-class-1">For</div>
+
+        <div class="need-C61RwL font-class-1">Need</div>
+
+        <div class="divya-9498448183-C61RwL font-class-1">
+          {{attenderName}}, {{attenderNo}}
+        </div>
+
+        <div class="verified-by-sir-jivi-9715209861-C61RwL">
+          Verified by {{verifiedBy}}, {{verifiedByNo}}
+        </div>
+
+        <div class="alotted-date-and-time-C61RwL font-class-1">
+          Alotted date and time
+        </div>
+
+        <div class="note-C61RwL font-class-1">Note</div>
+
+        <div class="x12-sep-2020-0930-am-C61RwL font-class-1">
+          {{date}}, {{time}}
+        </div>
+
+        <div class="baby-needs-urgent-blood-C61RwL font-class-1">{{notes}}</div>
+      </div>
+    </div>
+
+    <script src="launchpad-js/launchpad-banner.js" async=""></script>
+    <script
+      defer=""
+      src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"
+    ></script>
+    <script>
+      anima_isHidden = function (e) {
+        if (!(e instanceof HTMLElement)) return !1;
+        if (getComputedStyle(e).display == "none") return !0;
+        else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
+        return !1;
+      };
+      anima_loadAsyncSrcForTag = function (tag) {
+        var elements = document.getElementsByTagName(tag);
+        var toLoad = [];
+        for (var i = 0; i < elements.length; i++) {
+          var e = elements[i];
+          var src = e.getAttribute("src");
+          var loaded =
+            src != undefined &&
+            src.length > 0 &&
+            src !=
+              "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
+          if (loaded) continue;
+          var asyncSrc = e.getAttribute("anima-src");
+          if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+          if (anima_isHidden(e)) continue;
+          toLoad.push(e);
+        }
+        toLoad.sort(function (a, b) {
+          return anima_getTop(a) - anima_getTop(b);
+        });
+        for (var i = 0; i < toLoad.length; i++) {
+          var e = toLoad[i];
+          var asyncSrc = e.getAttribute("anima-src");
+          e.setAttribute("src", asyncSrc);
+        }
+      };
+      anima_pauseHiddenVideos = function (tag) {
+        var elements = document.getElementsByTagName("video");
+        for (var i = 0; i < elements.length; i++) {
+          var e = elements[i];
+          var isPlaying = !!(
+            e.currentTime > 0 &&
+            !e.paused &&
+            !e.ended &&
+            e.readyState > 2
+          );
+          var isHidden = anima_isHidden(e);
+          if (
+            !isPlaying &&
+            !isHidden &&
+            e.getAttribute("autoplay") == "autoplay"
+          ) {
+            e.play();
+          } else if (isPlaying && isHidden) {
+            e.pause();
+          }
+        }
+      };
+      anima_loadAsyncSrc = function (tag) {
+        anima_loadAsyncSrcForTag("img");
+        anima_loadAsyncSrcForTag("iframe");
+        anima_loadAsyncSrcForTag("video");
+        anima_pauseHiddenVideos();
+      };
+      var anima_getTop = function (e) {
+        var top = 0;
+        do {
+          top += e.offsetTop || 0;
+          e = e.offsetParent;
+        } while (e);
+        return top;
+      };
+      anima_loadAsyncSrc();
+      anima_old_onResize = window.onresize;
+      anima_new_onResize = undefined;
+      anima_updateOnResize = function () {
+        if (
+          anima_new_onResize == undefined ||
+          window.onresize != anima_new_onResize
+        ) {
+          anima_new_onResize = function (x) {
+            if (anima_old_onResize != undefined) anima_old_onResize(x);
+            anima_loadAsyncSrc();
+          };
+          window.onresize = anima_new_onResize;
+          setTimeout(function () {
+            anima_updateOnResize();
+          }, 3000);
+        }
+      };
+      anima_updateOnResize();
+      setTimeout(function () {
+        anima_loadAsyncSrc();
+      }, 200);
+    </script>
+
+    <!-- V 69fdf3a Wed Sep  2 15:43:09 UTC 2020 -->
+  </body>
+</html>

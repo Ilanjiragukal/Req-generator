@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <title>Ilanjiragukal | Blood req generator</title>
+  </head>
+  <body class="container">
+    <div class="row m-5 content">
+      <h1 class="mb-3">Generate blood request image</h1>
+      <h5 class="text-muted mb-5">By Ilanjiragaukal</h5>
+      <form class="col-md-8 col-sm-12" method="GET" action="/generate">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            aria-describedby="patientName"
+            name="name"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="group" class="form-label">Blood group</label>
+          <input class="form-control" name="group" id="group" />
+        </div>
+
+        <div class="mb-3">
+          <label for="units" class="form-label">Units</label>
+          <input class="form-control" id="units" name="units" />
+        </div>
+        <div class="mb-3">
+          <label for="reason" class="form-label">Reason</label>
+          <input class="form-control" id="reason" name="reason" />
+        </div>
+        <div class="mb-3">
+          <label for="place" class="form-label">Place</label>
+          <input class="form-control" id="place" name="place" />
+        </div>
+        <div class="mb-3">
+          <label for="district" class="form-label">District</label>
+          <input class="form-control" id="district" name="district" />
+        </div>
+        <div class="mb-3">
+          <label for="attenderName" class="form-label">Attender name</label>
+          <input class="form-control" id="attenderName" name="attenderName" />
+        </div>
+        <div class="mb-3">
+          <label for="attenderNo" class="form-label">Attender phone</label>
+          <input class="form-control" id="attenderNo" name="attenderNo" />
+        </div>
+        <div class="mb-3">
+          <label for="verifiedBy" class="form-label">Verified by</label>
+          <input class="form-control" name="verifiedBy" id="verifiedBy" />
+        </div>
+        <div class="mb-3">
+          <label for="verifiedByNo" class="form-label">Verified by phone</label>
+          <input class="form-control" name="verifiedByNo" id="verifiedByNo" />
+        </div>
+        <div class="mb-3">
+          <label for="date" class="form-label">Date</label>
+          <input type="date" class="form-control" id="date" name="date" />
+        </div>
+        <div class="mb-3">
+          <label for="time" class="form-label">time</label>
+          <input class="form-control" id="time" name="time" type="time" />
+        </div>
+        <div class="mb-3">
+          <label for="reqId" class="form-label">Request Id</label>
+          <input class="form-control" id="reqId" name="reqId" type="number" />
+        </div>
+        <div class="mb-3">
+          <label for="notes" class="form-label">Notes</label>
+          <textarea class="form-control" id="notes" name="notes"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
